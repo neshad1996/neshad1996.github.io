@@ -1,15 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  profile,
-  nav,
-  projects,
-  publications,
-  teaching,
-  awards,
-  talks,
-  service
-} from "./content";
+import { profile, nav, projects, publications, teaching, awards, service } from "./content";
 
 function useActiveSection(sectionIds) {
   const [active, setActive] = useState(sectionIds[0] || "home");
@@ -69,8 +60,8 @@ export default function App() {
             <span className="brandText">{profile.name}</span>
           </a>
 
-          {/* Desktop nav */}
-          <nav className="navDesktop">
+          {/* Centered links (desktop) */}
+          <nav className="navLinks" aria-label="Primary">
             {nav.map((n) => (
               <a
                 key={n.id}
@@ -80,7 +71,10 @@ export default function App() {
                 {n.label}
               </a>
             ))}
+          </nav>
 
+          {/* Right-side actions */}
+          <div className="navActions">
             <button
               className="iconBtn"
               type="button"
@@ -94,12 +88,12 @@ export default function App() {
             <a className="btn small" href={profile.cvUrl} target="_blank" rel="noreferrer">
               Download CV
             </a>
-          </nav>
 
-          {/* Mobile button */}
-          <button className="iconBtn burger" onClick={() => setMenuOpen(true)} aria-label="Open menu">
-            ☰
-          </button>
+            {/* Mobile menu button */}
+            <button className="iconBtn burger" onClick={() => setMenuOpen(true)} aria-label="Open menu">
+              ☰
+            </button>
+          </div>
         </div>
       </header>
 
@@ -165,15 +159,16 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, ease: "easeOut" }}
             >
-              <p className="kicker">{profile.title}</p>
+              {/* Requested: show your name as main heading with gradient blend */}
               <h1 className="h1">
-                Research portfolio with <span className="accent">clarity</span>,{" "}
-                <span className="accent">impact</span>, and modern presentation.
+                <span className="accent">{profile.name}</span>
               </h1>
+
+              <p className="kicker">{profile.title}</p>
               <p className="lead">{profile.subtitle}</p>
 
               <div className="ctaRow">
-                <a className="btn" href="#research">Research Portfolio</a>
+                <a className="btn" href="#research">Research</a>
                 <a className="btn ghost" href={profile.cvUrl} target="_blank" rel="noreferrer">CV (PDF)</a>
                 <a className="btn ghost" href={`mailto:${profile.email}`}>Email</a>
               </div>
@@ -192,22 +187,28 @@ export default function App() {
               </p>
             </motion.div>
 
+            {/* Requested: replace research snapshot with your photo */}
             <motion.aside
-              className="glassCard"
+              className="profileCard"
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.12, ease: "easeOut" }}
             >
-              <h2 className="h3">Research snapshot</h2>
-              <ul className="bullets">
-                {profile.highlights.map((h) => (
-                  <li key={h}>{h}</li>
-                ))}
-              </ul>
+              <div className="profileImageWrap">
+                <img
+                  className="profileImage"
+                  src={profile.headshotUrl}
+                  alt={`${profile.name} portrait`}
+                  onError={(e) => { e.currentTarget.style.display = "none"; }}
+                />
+              </div>
 
-              <div className="cardRow">
-                <a className="btn small ghost" href="#publications">Publications</a>
-                <a className="btn small ghost" href="#talks">Talks</a>
+              <div className="profileMeta">
+                <div className="profileName">{profile.name}</div>
+                <div className="muted">{profile.affiliation}</div>
+                <div className="muted">
+                  <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                </div>
               </div>
             </motion.aside>
           </div>
@@ -318,29 +319,6 @@ export default function App() {
           </div>
         </Section>
 
-        {/* TALKS */}
-        <Section id="talks" title="Talks & Conferences" subtitle="Recent presentations and participation.">
-          <div className="stack">
-            {talks.map((t) => (
-              <motion.div
-                key={t.year}
-                className="card"
-                initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.25 }}
-                transition={{ duration: 0.45 }}
-              >
-                <div className="rowTop">
-                  <h3 className="h4">{t.year}</h3>
-                </div>
-                <ul className="bullets">
-                  {t.items.map((x) => <li key={x}>{x}</li>)}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </Section>
-
         {/* SERVICE */}
         <Section id="service" title="Service & Memberships" subtitle="Professional memberships and roles.">
           <div className="card">
@@ -383,7 +361,7 @@ export default function App() {
 
               <div className="spacer" />
               <p className="muted tiny">
-                Edit your Scholar/ORCID/LinkedIn URLs in <code>src/content.js</code>.
+                Update your Scholar/ORCID/LinkedIn URLs in <code>src/content.js</code>.
               </p>
             </div>
           </div>
