@@ -1,33 +1,36 @@
 export const profile = {
-  name: "Neshad Deva Pathirana",
+  // This is what will show on the site (requested)
+  name: "Neshad D. Pathirana",
+
+  // Keep your full title here (used below the name)
   title: "Ph.D. Candidate in Physics • Nuclear Astrophysics • Experimental Nuclear Physics",
+
   subtitle:
     "I build experimentally constrained nuclear inputs for nucleosynthesis and neutrino physics using charge-exchange reactions, Oslo-method techniques, and modeling.",
+
   location: "East Lansing, MI, USA",
   email: "devanes1@msu.edu",
   affiliation: "Facility for Rare Isotope Beams (FRIB), Michigan State University",
+
+  // Files you upload in /public
   cvUrl: "/cv.pdf",
+  headshotUrl: "/images/profile.jpg",
+
   links: [
     { label: "GitHub", href: "https://github.com/neshad1996" },
     { label: "Google Scholar", href: "#" },
     { label: "ORCID", href: "#" },
     { label: "LinkedIn", href: "#" }
-  ],
-  highlights: [
-    "Charge-exchange + Oslo-style methods to constrain (n,γ) inputs",
-    "Cosmochronometer 92Nb production/destruction constraints",
-    "Neutrino–208Pb charged-current cross sections from charge-exchange data",
-    "Detector development: LENDA upgrade work"
   ]
 };
 
+// Removed Talks from nav (requested)
 export const nav = [
   { id: "home", label: "Home" },
   { id: "research", label: "Research" },
   { id: "publications", label: "Publications" },
   { id: "teaching", label: "Teaching" },
   { id: "awards", label: "Awards" },
-  { id: "talks", label: "Talks" },
   { id: "service", label: "Service" },
   { id: "contact", label: "Contact" }
 ];
@@ -161,25 +164,6 @@ export const awards = [
   "Graduate School Travel Fellowship (MSU)",
   "Gold medals & prizes (UoP): Physics excellence and awards",
   "Merit award (UoP symposium)"
-];
-
-export const talks = [
-  {
-    year: 2025,
-    items: [
-      "sirEN Conference: Oral + poster — 92Nb production sites",
-      "University of Oslo Seminar Series: Oral — CE-Oslo + 92Nb constraints"
-    ]
-  },
-  {
-    year: 2024,
-    items: [
-      "8th p-process workshop: Oral — CE-Oslo + 92Nb constraints",
-      "NPA XI: Poster — CE-Oslo first application to constrain (n,γ)",
-      "EBSS: Poster — CE-Oslo (n,γ) constraints",
-      "Oslo NLD/γSF Workshop: Poster — CE-Oslo (n,γ) constraints"
-    ]
-  }
 ];
 
 export const service = [
