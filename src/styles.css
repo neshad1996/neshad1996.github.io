@@ -626,9 +626,17 @@ input:focus, textarea:focus{
 }
 
 /* Justified hero subtitle */
-.leadJustify {
+.leadJustify{
   text-align: justify;
   text-justify: inter-word;
+
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+
+  overflow-wrap: break-word;
+  word-break: normal;
 }
+
 
 
