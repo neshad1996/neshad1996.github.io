@@ -136,20 +136,20 @@ export const projects = [
 export const publications = [
   {
     title: "Solving the puzzle of the cosmochronometer 92Nb production using the Oslo method",
-    venue: "Physical Review Letters (PRL)",
+    venue: "TBD",
     status: "Ongoing",
     links: []
   },
   {
     title:
-      "Experimental study on supernova neutrino-induced nucleosynthesis of 92Nb via the 92Zr(3He,t)92Nb charge-exchange reaction",
+      "Experimental study on supernova neutrino-induced nucleosynthesis of 92Nb",
     venue: "Physical Review Letters (PRL)",
     status: "Ongoing",
     links: []
   },
   {
     title: "Charged-current neutrino-208Pb cross sections via the 208Pb(3He,t) charge-exchange reaction",
-    venue: "Physical Review Letters (PRL)",
+    venue: "Physical Review C (PRC)",
     status: "Ongoing",
     links: []
   },
@@ -157,8 +157,26 @@ export const publications = [
     title: "Extraction of neutron capture cross sections on 92Zr using the charge-exchange Oslo method",
     venue: "Physical Review C (PRC)",
     status: "Published",
-    links: []
-  }
+    links: ["https://doi.org/10.1103/qdsh-ygry"]
+  },
+  {
+    title: "Single-nucleon transfer unveils NiCu cycle in astrophysical X-ray bursts",
+    venue: "Physical Review Letters (PRL)",
+    status: "Submitted",
+    links: ["https://doi.org/10.21203/rs.3.rs-7660136/v1"]
+  },
+  {
+    title: "Determination of proton and neutron contributions to the 0+gs →2+1 excitations in 42Si and 44S using inelastic proton scattering in inverse kinematics and intermediate energy Coulomb excitation",
+    venue: "Physical Review C (PRC)",
+    status: "Published",
+    links: ["https://doi.org/10.1103/b8xj-ycqk"]
+  },
+  {
+    title: "Construction of an Ionization Chamber to Detect Alpha and Beta Particles",
+    venue: "Research Congress (RESCON 2021)",
+    status: "Published",
+    links: ["http://www.pgis.pdn.ac.lk/rescon2021/abstracts/PS/134.pdf"]
+  },
 ];
 
 export const teaching = [
