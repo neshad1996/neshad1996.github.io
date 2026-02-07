@@ -167,9 +167,9 @@ export const teaching = [
       "Instructor in charge: ISP 205L — Visions of the Laboratory",
       "Tutor in charge: PHY 415 — Mathematical Modeling in Physics"
     ]
-  }
+  },
   {
-    place: "Michigan State University",
+    place: "University of Peradeniya",
     timeframe: "Aug 2022 – Dec 2024",
     items: [
       "Instructor in charge: PHY 252 — Introductory Physics Laboratory II",
