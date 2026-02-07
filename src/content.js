@@ -1,32 +1,21 @@
 export const profile = {
-  // This is what will show on the site (requested)
   name: "Neshad D. Pathirana",
-
-  // Keep your full title here (used below the name)
   title: "Ph.D. Candidate in Physics • Nuclear Astrophysics • Experimental Nuclear Physics",
-
   subtitle:
     "I build experimentally constrained nuclear inputs for nucleosynthesis and neutrino physics using charge-exchange reactions, Oslo-method techniques, and modeling.",
-
   location: "East Lansing, MI, USA",
   email: "devanes1@msu.edu",
   affiliation: "Facility for Rare Isotope Beams (FRIB), Michigan State University",
 
-  // Files you upload in /public
+  // Files in /public
   cvUrl: "/cv.pdf",
-  headshotUrl: "/images/profile.webp",
-
-  links: [
-    { label: "GitHub", href: "https://github.com/neshad1996" },
-    { label: "Google Scholar", href: "#" },
-    { label: "ORCID", href: "#" },
-    { label: "LinkedIn", href: "#" }
-  ]
+  headshotUrl: "/images/profile.webp"
 };
 
-// Removed Talks from nav (requested)
+// Header navigation (added News, removed Talks)
 export const nav = [
   { id: "home", label: "Home" },
+  { id: "news", label: "News" },
   { id: "research", label: "Research" },
   { id: "publications", label: "Publications" },
   { id: "teaching", label: "Teaching" },
@@ -35,13 +24,43 @@ export const nav = [
   { id: "contact", label: "Contact" }
 ];
 
+// NEWS (you will edit this a lot in the future)
+// date format: YYYY-MM-DD (this helps automatic ordering)
+export const news = [
+  {
+    id: "news-2026-02-06",
+    date: "2026-02-06",
+    title: "Website launched",
+    summary: "New personal academic website is live with research portfolio and publications.",
+    images: ["/images/news/sample1.webp"],
+    details: [
+      "Modern React site hosted on GitHub Pages.",
+      "Expandable News section to avoid a long homepage."
+    ],
+    links: []
+  },
+  {
+    id: "news-2026-01-20",
+    date: "2026-01-20",
+    title: "Project milestone",
+    summary: "Major progress on CE-Oslo analysis pipeline and model validation.",
+    images: ["/images/news/sample2.webp", "/images/news/sample3.webp"],
+    details: [
+      "Cross-checks completed across multiple normalization choices.",
+      "Next: integrate results into reaction-rate sensitivity studies."
+    ],
+    links: []
+  }
+];
+
+// Research projects
 export const projects = [
   {
     id: "nb92",
     title: "Cosmochronometer 92Nb Production Sites",
     timeframe: "Ongoing",
     role: "Graduate Research Assistant (FRIB / MSU)",
-    image: "/images/92nb.jpg",
+    image: "/images/92nb.webp",
     tags: ["charge-exchange", "Gamow–Teller", "nucleosynthesis"],
     summary:
       "Extracting astrophysical reaction rates relevant to 92Nb via charge-exchange data and Gamow–Teller strength.",
@@ -49,14 +68,14 @@ export const projects = [
       "Uses 92Zr(3He,t) experimental data",
       "Targets key nuclear inputs shaping 92Nb production/destruction pathways"
     ],
-    links: [{ label: "Overview", href: "#" }]
+    links: []
   },
   {
     id: "ceoslo",
     title: "CE-Oslo Method for (n,γ) Constraints",
     timeframe: "Published + ongoing extensions",
     role: "Method development + first applications",
-    image: "/images/ce-oslo.jpg",
+    image: "/images/ce-oslo.webp",
     tags: ["Oslo method", "charge-exchange", "(n,γ)"],
     summary:
       "Developed the Charge-Exchange Oslo (CE-Oslo) method and applied it to constrain neutron-capture cross sections.",
@@ -64,14 +83,14 @@ export const projects = [
       "First application toward 92Zr(n,γ)93Zr constraints",
       "Bridges charge-exchange information with statistical properties"
     ],
-    links: [{ label: "Paper", href: "#" }]
+    links: []
   },
   {
     id: "pb208",
     title: "Neutrino–208Pb Charged-Current Cross Sections",
     timeframe: "Ongoing",
     role: "GT strength extraction from charge-exchange data",
-    image: "/images/neutrino-pb.jpg",
+    image: "/images/neutrino-pb.webp",
     tags: ["neutrinos", "charge-exchange", "208Pb"],
     summary:
       "Determining neutrino–208Pb CC cross sections by extracting Gamow–Teller strength from charge-exchange reactions.",
@@ -79,14 +98,14 @@ export const projects = [
       "Based on 208Pb(3He,t)208Bi reaction data",
       "Supports neutrino detection / nuclear response applications"
     ],
-    links: [{ label: "Notes", href: "#" }]
+    links: []
   },
   {
     id: "lenda",
     title: "LENDA Detector Upgrade & Testing",
     timeframe: "Ongoing",
     role: "Detector development",
-    image: "/images/lenda.jpg",
+    image: "/images/lenda.webp",
     tags: ["instrumentation", "neutrons", "scintillators"],
     summary:
       "Contributing to LENDA upgrade work by testing and evaluating scintillator materials for improved neutron detection.",
@@ -94,7 +113,7 @@ export const projects = [
       "Hands-on testing & evaluation",
       "Supports experimental campaigns at FRIB"
     ],
-    links: [{ label: "Details", href: "#" }]
+    links: []
   }
 ];
 
@@ -128,9 +147,7 @@ export const publications = [
     title: "Single-nucleon transfer unveils NiCu cycle in astrophysical X-ray bursts",
     venue: "PRL",
     status: "Submitted",
-    links: [
-      { label: "Preprint", href: "https://doi.org/10.21203/rs.3.rs-7660136/v1" }
-    ]
+    links: [{ label: "Preprint", href: "https://doi.org/10.21203/rs.3.rs-7660136/v1" }]
   }
 ];
 
@@ -171,3 +188,13 @@ export const service = [
   "IReNA / JINA-CEE / CeNAM (member)",
   "Former Secretary — Sri Lankan Student Association at MSU"
 ];
+
+// CONTACT FORM CONFIG (kept in content.js so you edit one file)
+// Recommended: use Formspree so messages go to your inbox without a backend.
+// How: create a form on Formspree → it gives you an endpoint like https://formspree.io/f/xxxxabcd
+export const contactForm = {
+  // Put your Formspree endpoint here. Leave "" to use mailto fallback.
+  endpoint: "",
+  emailTo: "devanes1@msu.edu",
+  subjectPrefix: "Website message"
+};
