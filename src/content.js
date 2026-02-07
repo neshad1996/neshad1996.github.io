@@ -155,27 +155,27 @@ export const publications = [
   },
   {
     title: "Extraction of neutron capture cross sections on 92Zr using the charge-exchange Oslo method",
-    venue: "Physical Review C (PRC)",
+    venue: "N.D. Pathirana et. al (2026)",
     status: "Published",
-    links: ["https://doi.org/10.1103/qdsh-ygry"]
+    links: [{ label: "Phys. Rev. C 113, 015801", href:"https://doi.org/10.1103/qdsh-ygry"}]
   },
   {
     title: "Single-nucleon transfer unveils NiCu cycle in astrophysical X-ray bursts",
-    venue: "O'Shea (2026)",
+    venue: "O'Shea et. al (2026)",
     status: "Submitted",
     links: [{ label: "Physical Review Letters (PRL)", href: "https://doi.org/10.21203/rs.3.rs-7660136/v1" }]
   },
   {
     title: "Determination of proton and neutron contributions to the 0+gs →2+1 excitations in 42Si and 44S using inelastic proton scattering in inverse kinematics and intermediate energy Coulomb excitation",
-    venue: "Physical Review C (PRC)",
+    venue: "L.A. Riley et al. (2025)",
     status: "Published",
-    links: ["https://doi.org/10.1103/b8xj-ycqk"]
+    links: [{ label: "Phys. Rev. C 112, 014331", href:"https://doi.org/10.1103/b8xj-ycqk"}]
   },
   {
     title: "Construction of an Ionization Chamber to Detect Alpha and Beta Particles",
-    venue: "Research Congress (RESCON 2021)",
+    venue: "N.D. Pathirana et. al (2021)",
     status: "Published",
-    links: ["http://www.pgis.pdn.ac.lk/rescon2021/abstracts/PS/134.pdf"]
+    links: [{ label: "Research Congress (RESCON 2021)", href:"http://www.pgis.pdn.ac.lk/rescon2021/abstracts/PS/134.pdf"}]
   },
 ];
 
