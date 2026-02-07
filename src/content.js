@@ -199,7 +199,7 @@ export const awards = [
   "Merit Award in SURS Symposium"
 ];
 
-export const services = [
+export const service = [
   "Galonsky International Travel Award"
 ];
 
