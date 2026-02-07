@@ -14,7 +14,7 @@ export const profile = {
 
   // Files you upload in /public
   cvUrl: "/cv.pdf",
-  headshotUrl: "/images/profile.jpg",
+  headshotUrl: "/images/profile.webp",
 
   links: [
     { label: "GitHub", href: "https://github.com/neshad1996" },
