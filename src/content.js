@@ -82,7 +82,7 @@ export const projects = [
     title: "Experimental Extraction of Nuclear Statistical Properties",
     timeframe: "Published + Ongoing",
     role: "Graduate Research Assistant (FRIB/MSU) • Visiting Scholar (University of Oslo)",
-    image: "/images/NLD_and_GSF.png",
+    image: "/images/NLD_and_GSF.PNG",
     tags: ["Oslo Method", "CE-Oslo Method", "NLD", "γSF"],
     summary:
       "Extracting nuclear statistical properties with the Oslo Method to provide experimental constraints and reduce uncertainties in reaction modeling.",
