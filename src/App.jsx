@@ -372,8 +372,19 @@ export default function App() {
 
               <div className="spacer" />
 
-              <h3 className="h4">Affiliation</h3>
-              <p className="muted">{profile.affiliation}</p>
+              <h3 className="h4">Address</h3>
+              <p className="muted" style={{ whiteSpace: "pre-line" }}>
+                {profile.address}
+              </p>
+
+              <div className="spacer" />
+
+              <h3 className="h4">Phone</h3>
+              <p className="muted">
+                <a href={`tel:${(profile.phone || "").replace(/[^\d+]/g, "")}`}>
+                  {profile.phone}
+                </a>
+              </p>
 
               {/* Social icons row */}
               <div className="spacer" />
@@ -393,7 +404,6 @@ export default function App() {
                   </a>
                 ))}
               </div>
-              <p className="muted tiny">Update URLs in <code>src/content.js</code>.</p>
             </div>
 
             <ContactForm />
