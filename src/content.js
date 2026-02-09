@@ -11,7 +11,7 @@ export const profile = {
   phone: "+1 (517) 974-7964",
   address: "Facility for Rare Isotope Beams (FRIB),\nMichigan State University,\n640 S Shaw Lane,\nEast Lansing, MI 48824, USA",
 
-
+ 
   // Files in /public
   cvUrl: "/cv.pdf",
   headshotUrl: "/images/profile.webp"
