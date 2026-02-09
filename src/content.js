@@ -31,11 +31,11 @@ export const nav = [
 // Affiliation logos shown on the Home section
 export const affiliationLogos = [
   { name: "Michigan State University", src: "/images/logos/MSU.jpg", href: "https://msu.edu", variant: "light" },
-  { name: "Facility for Rare Isotope Beams (FRIB)", src: "/images/logos/FRIB.jpg", href: "https://frib.msu.edu", variant: "dark" },
-  { name: "NuGrid", src: "/images/logos/NuGrid.png", href: "https://nugridstars.org", variant: "dark" },
+  { name: "Facility for Rare Isotope Beams (FRIB)", src: "/images/logos/FRIB.jpg", href: "https://frib.msu.edu", variant: "light" },
+  { name: "NuGrid", src: "/images/logos/NuGrid.png", href: "https://nugridstars.org", variant: "light" },
   { name: "IReNA", src: "/images/logos/IReNA.jpg", href: "https://www.irenaweb.org", variant: "light" },
   { name: "CeNAM", src: "/images/logos/CeNAM.png", href: "https://cenam.nd.edu", variant: "light" },
-  { name: "JINA-CEE", src: "/images/logos/JINA.png", href: "https://jinaweb.org", variant: "dark" },
+  { name: "JINA-CEE", src: "/images/logos/JINA.png", href: "https://jinaweb.org", variant: "light" },
   { name: "Norwegian Nuclear Research Centre (NNRC)", src: "/images/logos/NNRC.svg", href: "https://www.uio.no/english/research/centres/norcern/", variant: "light" },
   { name: "University of Oslo", src: "/images/logos/UiO.png", href: "https://www.uio.no", variant: "light" }
 ];
