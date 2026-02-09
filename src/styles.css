@@ -11,6 +11,15 @@
   --radius: 18px;
 }
 
+/* Reusable accent/gradient title */
+.titleAccent{
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 html { color-scheme: dark; }
 :root[data-theme="light"]{
   --bg:#ffffff;
@@ -650,5 +659,44 @@ input:focus, textarea:focus{
   word-break: normal;
 }
 
+/* ===== Accent titles for cards (Research / Publications / Teaching / News) ===== */
+/* Research project card titles */
+.projectBody .h4{
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 850;
+}
 
+/* Publications titles */
+.pubTitle{
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 850;
+}
+
+/* Teaching card titles */
+#teaching .h4{
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 850;
+}
+
+/* News titles */
+.newsTitle{
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 850;
+}
 
