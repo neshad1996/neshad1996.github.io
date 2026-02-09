@@ -203,51 +203,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* NEWS */}
-        <Section id="news" title="News" subtitle="Click an item for details. Use “Show all” to expand the full timeline.">
-          <div className="newsTopRow">
-            <div className="muted">
-              Showing {visibleNews.length} of {sortedNews.length}
-            </div>
-
-            {sortedNews.length > 6 ? (
-              <button className="btn small ghost" type="button" onClick={() => setShowAllNews((v) => !v)}>
-                {showAllNews ? "Collapse" : "Show all news"}
-              </button>
-            ) : null}
-          </div>
-
-          <div className="newsList">
-            {visibleNews.map((n, idx) => (
-              <motion.button
-                key={n.id}
-                className="newsItem"
-                onClick={() => setOpenNews(n)}
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.99 }}
-                initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.25 }}
-                transition={{ duration: 0.45, delay: idx * 0.03 }}
-              >
-                <div className="newsLeft">
-                  <div className="newsDate">{formatDate(n.date)}</div>
-                  <div className="newsTitle">{n.title}</div>
-                  <div className="muted">{n.summary}</div>
-                </div>
-
-                {n.images?.length ? (
-                  <div className="newsThumb">
-                    <img src={n.images[0]} alt={n.title} onError={(e) => { e.currentTarget.style.display = "none"; }} />
-                  </div>
-                ) : (
-                  <div className="newsThumb placeholder" aria-hidden="true" />
-                )}
-              </motion.button>
-            ))}
-          </div>
-        </Section>
-
         {/* RESEARCH */}
         <Section id="research" title="Research" subtitle="Selected projects — click a card for details.">
           <div className="newsTopRow">
@@ -358,6 +313,51 @@ export default function App() {
                 <div key={a} className="awardItem">• {a}</div>
               ))}
             </div>
+          </div>
+        </Section>
+
+        {/* NEWS */}
+        <Section id="news" title="News" subtitle="Click an item for details. Use “Show all” to expand the full timeline.">
+          <div className="newsTopRow">
+            <div className="muted">
+              Showing {visibleNews.length} of {sortedNews.length}
+            </div>
+
+            {sortedNews.length > 6 ? (
+              <button className="btn small ghost" type="button" onClick={() => setShowAllNews((v) => !v)}>
+                {showAllNews ? "Collapse" : "Show all news"}
+              </button>
+            ) : null}
+          </div>
+
+          <div className="newsList">
+            {visibleNews.map((n, idx) => (
+              <motion.button
+                key={n.id}
+                className="newsItem"
+                onClick={() => setOpenNews(n)}
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.99 }}
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.45, delay: idx * 0.03 }}
+              >
+                <div className="newsLeft">
+                  <div className="newsDate">{formatDate(n.date)}</div>
+                  <div className="newsTitle">{n.title}</div>
+                  <div className="muted">{n.summary}</div>
+                </div>
+
+                {n.images?.length ? (
+                  <div className="newsThumb">
+                    <img src={n.images[0]} alt={n.title} onError={(e) => { e.currentTarget.style.display = "none"; }} />
+                  </div>
+                ) : (
+                  <div className="newsThumb placeholder" aria-hidden="true" />
+                )}
+              </motion.button>
+            ))}
           </div>
         </Section>
 
