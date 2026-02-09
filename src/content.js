@@ -31,7 +31,7 @@ export const nav = [
 // Affiliation logos shown on the Home section
 export const affiliationLogos = [
   { name: "Michigan State University", src: "/images/logos/MSU.jpg", href: "https://msu.edu", variant: "light" },
-  { name: "Facility for Rare Isotope Beams (FRIB)", src: "/images/logos/FRIB.jpg", href: "https://frib.msu.edu", variant: "light" },
+  { name: "Facility for Rare Isotope Beams (FRIB)", src: "/images/logos/FRIB.png", href: "https://frib.msu.edu", variant: "light" },
   { name: "NuGrid", src: "/images/logos/NuGrid.png", href: "https://nugridstars.org", variant: "light" },
   { name: "IReNA", src: "/images/logos/IReNA.jpg", href: "https://www.irenaweb.org", variant: "light" },
   { name: "CeNAM", src: "/images/logos/CeNAM.png", href: "https://cenam.nd.edu", variant: "light" },
