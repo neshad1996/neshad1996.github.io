@@ -8,7 +8,6 @@ import {
   publications,
   teaching,
   awards,
-  service,
   contactForm,
   socialLinks
 } from "./content";
@@ -359,15 +358,6 @@ export default function App() {
                 <div key={a} className="awardItem">• {a}</div>
               ))}
             </div>
-          </div>
-        </Section>
-
-        {/* SERVICE */}
-        <Section id="service" title="Service & Memberships" subtitle="Professional memberships and roles.">
-          <div className="card">
-            <ul className="bullets">
-              {service.map((s) => <li key={s}>{s}</li>)}
-            </ul>
           </div>
         </Section>
 
