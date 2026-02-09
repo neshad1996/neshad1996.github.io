@@ -28,6 +28,18 @@ export const nav = [
   { id: "contact", label: "Contact" }
 ];
 
+// Affiliation logos shown on the Home section
+export const affiliationLogos = [ 
+  { name: "Michigan State University", src: "/public/images/logos/MSU.jpg", href: "https://msu.edu", variant: "light" },
+  { name: "Facility for Rare Isotope Beams (FRIB)", src: "/public/images/logos/FRIB.jpg", href: "https://frib.msu.edu", variant: "dark" },
+  { name: "NuGrid", src: "/public/images/logos/NuGrid.png"", href: "https://nugridstars.org", variant: "dark" },
+  { name: "IReNA", src: "/public/images/logos/IReNA.jpg", href: "https://www.irenaweb.org", variant: "light" },
+  { name: "CeNAM", src: "/public/images/logos/CeNAM.png", href: "https://cenam.nd.edu", variant: "light" },
+  { name: "JINA-CEE", src: "/public/images/logos/JINA.png", href: "https://jinaweb.org", variant: "dark" },
+  { name: "Norwegian Nuclear Research Centre (NNRC)", src: "/public/images/logos/NNRC.svg", href: "https://www.uio.no/english/research/centres/norcern/", variant: "light" },
+  { name: "University of Oslo", src: "/public/images/logos/UiO.png", href: "https://www.uio.no", variant: "light" }
+];
+
 // Social links (icons rendered in Contact section)
 // You can update URLs later here only.
 export const socialLinks = [
@@ -63,17 +75,6 @@ export const socialLinks = [
   }
 ];
 
-// Affiliation logos shown on the Home section
-export const affiliationLogos = [
-  { name: "Michigan State University", src: "/images/logos/MSU.jpg", href: "https://msu.edu", variant: "light" },
-  { name: "Facility for Rare Isotope Beams (FRIB)", src: "/images/logos/FRIB.jpg", href: "https://frib.msu.edu", variant: "dark" },
-  { name: "NuGrid", src: "/images/logos/NuGrid.png"", href: "https://nugridstars.org", variant: "dark" },
-  { name: "IReNA", src: "/images/logos/IReNA.jpg", href: "https://www.irenaweb.org", variant: "light" },
-  { name: "CeNAM", src: "/images/logos/CeNAM.png", href: "https://cenam.nd.edu", variant: "light" },
-  { name: "JINA-CEE", src: "/images/logos/JINA.png", href: "https://jinaweb.org", variant: "dark" },
-  { name: "Norwegian Nuclear Research Centre (NNRC)", src: "/images/logos/NNRC.svg", href: "https://www.uio.no/english/research/centres/norcern/", variant: "light" },
-  { name: "University of Oslo", src: "/images/logos/UiO.png", href: "https://www.uio.no", variant: "light" }
-];
 
 // NEWS (edit this list in the future)
 // News / Updates (LinkedIn-style posts) — curated from news.txt
