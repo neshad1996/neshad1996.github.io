@@ -507,15 +507,20 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
   font-size: 13px;
 }
 .newsTitle{
-  font-weight: 800;
-  font-size: 14px;     
+  font-size: 16px;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
 }
 @media (min-width: 980px){
-  .newsTitle{ font-size: 22px; }
+  .newsTitle{ font-size: 16px; }
 }
 .newsSummary{
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.45;
+  margin-top: 4px;
+  max-width: 78ch;
 }
 .newsThumb{
   border-radius: 14px;
