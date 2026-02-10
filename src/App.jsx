@@ -263,33 +263,6 @@ export default function App() {
           </div>
         </Section>
 
-        {/* PUBLICATIONS */}
-        <Section id="publications" title="Publications" subtitle="Journal articles, conference proceedings, and preprints">
-          <div className="card">
-            <ul className="pubs">
-              {publications.map((pub) => (
-                <li key={pub.title} className="pub">
-                  <div className="pubTop">
-                    <span className="pubTitle">{pub.title}</span>
-                    <span className="pill">{pub.status}</span>
-                  </div>
-                  <div className="pubMeta muted">{pub.venue}</div>
-
-                  {pub.links?.length ? (
-                    <div className="pubLinks">
-                      {pub.links.map((l) => (
-                        <a key={l.label} href={l.href} target="_blank" rel="noreferrer">
-                          {l.label}
-                        </a>
-                      ))}
-                    </div>
-                  ) : null}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Section>
-
         {/* TEACHING */}
         <Section id="teaching" title="Teaching" subtitle="Instructional experience in courses, labs, and tutoring">
           <div className="twoCol">
@@ -322,6 +295,33 @@ export default function App() {
                 <div key={a} className="awardItem">• {a}</div>
               ))}
             </div>
+          </div>
+        </Section>
+
+        {/* PUBLICATIONS */}
+        <Section id="publications" title="Publications" subtitle="Journal articles, conference proceedings, and preprints">
+          <div className="card">
+            <ul className="pubs">
+              {publications.map((pub) => (
+                <li key={pub.title} className="pub">
+                  <div className="pubTop">
+                    <span className="pubTitle">{pub.title}</span>
+                    <span className="pill">{pub.status}</span>
+                  </div>
+                  <div className="pubMeta muted">{pub.venue}</div>
+
+                  {pub.links?.length ? (
+                    <div className="pubLinks">
+                      {pub.links.map((l) => (
+                        <a key={l.label} href={l.href} target="_blank" rel="noreferrer">
+                          {l.label}
+                        </a>
+                      ))}
+                    </div>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
           </div>
         </Section>
 
