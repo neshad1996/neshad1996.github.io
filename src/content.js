@@ -21,9 +21,9 @@ export const profile = {
 export const nav = [
   { id: "home", label: "Home" },
   { id: "research", label: "Research" },
-  { id: "publications", label: "Publications" },
   { id: "teaching", label: "Teaching" },
   { id: "awards", label: "Awards" },
+  { id: "publications", label: "Publications" },
   { id: "news", label: "News" },
   { id: "contact", label: "Contact" }
 ];
