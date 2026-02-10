@@ -214,10 +214,11 @@ export default function App() {
 
               <div className="profileMeta">
                 <div className="profileName">{profile.name}</div>
-                <div className="muted">{profile.affiliation}</div>
+
                 <div className="muted">
-                  <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                  Graduate Research Assistant, {profile.affiliation}
                 </div>
+        
               </div>
             </motion.aside>
           </div>
