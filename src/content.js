@@ -529,7 +529,7 @@ export const projects = [
     title: "Indirect Constraints on Neutron-Capture Reaction Rates",
     timeframe: "Published + Ongoing",
     role: "Graduate Research Assistant (FRIB/MSU) • Visiting Scholar (University of Oslo)",
-    image: "/images/neutron_new.jpg",
+    image: "/images/NNDC.png",
     tags: ["Hauser–Feshbach", "TALYS", "NLD", "γSF"],
     summary:
       "Constraining astrophysical (n,γ) rates by incorporating experimentally extracted statistical inputs into Hauser–Feshbach calculations.",
@@ -537,7 +537,7 @@ export const projects = [
       "Focuses on neutron-capture rates relevant to nucleosynthesis and cosmochronometry",
       "Combines experimentally extracted NLD and γSF with model systematics to reduce reaction-rate uncertainties",
       "Performs Hauser–Feshbach calculations using TALYS and evaluates the impact of nuclear-input variations",
-      "(Image credit: Aaron Couture-LANL)"
+      "(Image credit: NNDC)"
     ],
     links: []
   },
