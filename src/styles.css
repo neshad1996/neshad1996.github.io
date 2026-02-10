@@ -124,8 +124,6 @@ border-bottom: 1px solid var(--line);
 /* (6) Center the nav links nicely */
 .headerInner{
 min-height: 68px;
-display: grid;
-grid-template-columns: auto 1fr; /* brand | links | actions */
 align-items: center;
 gap: 12px;
 }
@@ -143,7 +141,7 @@ display:flex;
 align-items:center;
 justify-content:flex-end;
 gap: 8px;
-flex-wrap:wrap;
+margin-left: auto;
 }
 
 .navActions{
@@ -154,10 +152,14 @@ gap: 10px;
 }
 
 .navLink{
-padding: 8px 10px;
-border-radius: 999px;
-border: 1px solid transparent;
-color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  height: 36px;            /* ✅ keeps them centered in header */
+  padding: 0 10px;
+  line-height: 1;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: var(--muted);
 }
 .navLink.active{
 color: var(--text);
