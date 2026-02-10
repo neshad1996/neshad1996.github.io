@@ -36,8 +36,8 @@ export const affiliationLogos = [
   { name: "IReNA", src: "/images/logos/IReNA.png", href: "https://www.irenaweb.org", variant: "light" },
   { name: "CeNAM", src: "/images/logos/CeNAM.png", href: "https://www.cenamweb.org", variant: "light" },
   { name: "JINA-CEE", src: "/images/logos/JINA.png", href: "https://jinaweb.org", variant: "light" },
-  { name: "Norwegian Nuclear Research Centre (NNRC)", src: "/images/logos/NNRC.svg", href: "https://www.nnrc.uio.no/english/", variant: "light" },
- { name: "University of Oslo", src: "/images/logos/UiO.png", href: "https://www.mn.uio.no/fysikk/english/", variant: "light" }
+  { name: "University of Oslo", src: "/images/logos/UiO.png", href: "https://www.mn.uio.no/fysikk/english/", variant: "light" },
+  { name: "Norwegian Nuclear Research Centre (NNRC)", src: "/images/logos/NNRC_cropped.png", href: "https://www.nnrc.uio.no/english/", variant: "light" }
 ];
 
 // Social links (icons rendered in Contact section)
