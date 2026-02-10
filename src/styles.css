@@ -912,3 +912,11 @@ text-wrap: balance;        /* modern browsers: balances line breaks */
     margin-left: auto;
   }
 }
+
+/* --- Mobile: make Awards bullets match Teaching bullets --- */
+@media (max-width: 980px){
+  .awardItem::before{
+    font-size: 1.30em;       /* increase bullet size */
+    transform: translateY(0.02em);  /* keep it vertically aligned */
+  }
+}
