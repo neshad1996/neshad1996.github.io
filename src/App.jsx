@@ -726,8 +726,12 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container footerInner">
-        <span className="muted">© {new Date().getFullYear()} {profile.name}</span>
-        <span className="muted">React + Vite • GitHub Pages</span>
+        <span className="muted">
+          © {new Date().getFullYear()} {profile.name} | All rights reserved
+        </span>
+        <span className="muted">
+          Built with React & Vite • Hosted on GitHub Pages
+        </span>
       </div>
     </footer>
   );
