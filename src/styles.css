@@ -781,7 +781,7 @@ input:focus, textarea:focus{
   max-width: 160px;
   object-fit: contain;
   display: block;
-  transform: scale(1.12);      /* zooms into logo */
+  transform: scale(1.135);      /* zooms into logo */
   transform-origin: center;
   filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
 }
