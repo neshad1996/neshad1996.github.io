@@ -115,6 +115,8 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
 
 /* Header */
 .header{
+  display: flex;
+  align-items: center;
   position:sticky; top:0; z-index:50;
   backdrop-filter: blur(14px);
   background: color-mix(in srgb, var(--bg) 80%, transparent);
@@ -140,11 +142,27 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
 
 /* Make each link vertically centered (baseline issues go away) */
 .navLink{
-  display: inline-flex;     /* important */
-  align-items: center;      /* important */
-  height: 36px;             /* pick what looks best: 34–40px */
-  padding: 0 12px;          /* no vertical padding */
-  line-height: 1;           /* avoid baseline shift */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 36px;
+  padding: 0 14px;
+  line-height: 1;
+
+  border-radius: 999px;          /* ✅ pill shape */
+  border: 1px solid transparent; /* ✅ allows active border-color to show */
+  background: transparent;
+
+  color: var(--muted);
+  text-decoration: none;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.navLink:hover{
+  transform: translateY(-1px);
+  color: var(--text);
+  text-decoration: none;
 }
 
 /* Hide navActions on desktop since it only contains burger (which is hidden anyway) */
