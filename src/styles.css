@@ -456,9 +456,10 @@ color: var(--muted);
   content: "•";
   position: absolute;
   left: 0;
-  top: 0.15em;        /* adjust if needed: 0.05em–0.20em */
+  top: 0;                 /* anchor */
+  transform: translateY(0.12em);  /* fine-tune alignment */
   opacity: 0.9;
-  font-size: 1.17em;  /* makes bullet match Teaching bullets better */
+  font-size: 1.18em;      /* change this freely */
   line-height: 1;
 }
 
