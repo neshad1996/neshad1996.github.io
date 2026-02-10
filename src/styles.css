@@ -734,7 +734,7 @@ input:focus, textarea:focus{
 }
 
 .hero .kicker{
-  margin-bottom: 40px; /* gap between highlight bar and first paragraph */
+  margin-bottom: 35px; /* gap between highlight bar and first paragraph */
 }
 
 /* Affiliation logos row (Home / Hero) */
